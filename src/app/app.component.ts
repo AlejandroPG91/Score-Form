@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'score-form-app';
+  private expand = true;
+
+  constructor() { }
+
+  ngOnInit() {
+    console.log("AAAAAAAAAAAA: "+this.expandMenu);
+  }
+
+  public expandMenu(){
+    this.expand = !this.expand;
+  }
+  
 }
